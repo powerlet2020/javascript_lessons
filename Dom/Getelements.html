@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <p class="color1">hamza</p>
+   <p class="color1">zology</p>
+   <p class="color1">power</p>
+   <script>
+    let myColor = document.getElementsByTagName('p');
+    for (let col of myColor){
+      col.innerHTML="powerlet"
+      col.style.color="blue"
+      col.style.textTransform='uppercase'
+    }
+    myColor[0].style.fontStyle="italic"
+    myColor[0].style.fontSize="2rem"
+    console.log(myColor[0])
+   </script>
+   
+</body>
+</html>

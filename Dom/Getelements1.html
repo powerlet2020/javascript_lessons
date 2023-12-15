@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="mydiv">learn web dev</div>
+    <div class="mydiv">i love data science</div>
+    <div class="mydiv">i am a front end developer</div>
+    <script>
+        let newElement = document.querySelector('.mydiv');
+        newElement.style.color="red"
+        let secondElement= document.querySelectorAll('.mydiv');
+        for(let elem of secondElement){
+           elem.style.fontSize="2rem"
+           elem.style.textTransform="uppercase"
+           elem.style.fontStyle="italic"
+        }
+    </script>
+</body>
+</html>
