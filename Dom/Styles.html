@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="username" style="background: red; font-size: 20px;">
+     <script>
+        let inputbox = document.querySelector('#username');
+        console.log(inputbox.style)
+        console.log(inputbox.style.background);
+        console.log(inputbox.style.fontSize);
+        // --------------adding styles----------
+        inputbox.style.padding = '10px'
+        console.log(inputbox);
+        // --------------CSS text----------
+        inputbox.style.cssText= 'width:200px; height:100px;'
+        console.log(inputbox);
+        console.log(inputbox);
+        // ------------concatenation---------------
+        inputbox.style.cssText += "border:2px solid black;"
+        console.log(inputbox);
+        console.log(inputbox);
+     </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="username" placeholder="username">
+    <script>
+
+        let inputbox = document.getElementById('username');
+        console.log(inputbox.attributes);
+        console.log(inputbox.getAttribute('type'));
+        console.log(inputbox.getAttribute('id'));
+        console.log(inputbox.getAttribute('placeholder'));
+        // ----------------set-attributes-----------
+
+        inputbox.setAttribute('class','user');
+        console.log(inputbox)
+        // -----------hasattribute()-----gives booleans values
+        
+        console.log(inputbox.hasAttribute('class'));
+        // --------------removeattribute--------
+        inputbox.removeAttribute('placeholder');
+        console.log(inputbox);
+        console.log(inputbox);
+        
+    </script>
+</body>
+</html>
