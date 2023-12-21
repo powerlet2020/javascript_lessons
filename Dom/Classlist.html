@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title" class="main message">Welcome to powerletdev</h1>
+    <script>
+        let title = document.getElementById('title');
+        console.log(title.classList)
+        // -------adding a new class---------
+        title.classList.add('new')
+        console.log(title.classList)
+
+        // ------------adding multiple classlist--------
+        title.classList.add('power','zology')
+        console.log(title.classList)
+        // ---------remove a class------
+        title.classList.remove('power',"zology")
+        console.log(title.classList)
+        // ----------replace a class------
+        title.classList.replace('main','original')
+        console.log(title.classList)
+        // -----------toggle list----------
+        title.classList.toggle('message')
+        console.log(title.classList)
+        title.classList.toggle('yesooo')
+        console.log(title.classList)
+    </script>
+</body>
+</html>
