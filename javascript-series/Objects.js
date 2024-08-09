@@ -17,3 +17,4 @@ console.log(person['name'])
 person.age = 35;
 console.log(person.age)
 console.log(person.greet())
+
