@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    button {
+      background-color: yellow;
+    }
+    .altColor {
+      background-color: red;
+    }
+  </style>
+  <body>
+    <button>Press me!</button>
+
+    <script>
+      const button = document.querySelector("button");
+      function toggle() {
+        button.classList.toggle("altColor");
+      }
+      //   toggle();
+      //   button.addEventListener("click", toggle); // callback function
+
+      button.addEventListener("click", function () {
+        button.classList.toggle("altColor");
+      });
+    </script>
+  </body>
+</html>

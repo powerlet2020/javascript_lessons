@@ -49,4 +49,4 @@ console.log(theme, laguage);
 const greet = ({ name, greeting = "hello" }) => {
   console.log(`${greeting} ${name}`);
 };
-console.log(greet({ name: "hamza" }));
+// console.log(greet({ name: "hamza" }));
